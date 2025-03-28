@@ -1,0 +1,13 @@
+.footer-area{
+  background-color: rgb(232, 232, 232);
+  padding: 1px;
+}
+
+.content-area{
+  max-width: 1000px;
+  font-size: 14px;
+  padding: 50px;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}

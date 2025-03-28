@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.hero-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.question {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.dropdown {
+  width: 290px;
+  height: 45px;
+  padding: 0 17px;
+  font-size: 13px;
+  color: gray;
+  border: 1px solid;
+  border-radius: 5px;
+  appearance: none;
+  background-color: white;
+  background-image: none;
+  box-sizing: border-box;
+
+}
+
+
+.dropdown option {
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.p-info {
+  font-size: 11px;
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.continue-btn {
+  display: flex;
+  gap: 5px;
+  letter-spacing: 0.5px;
+  width: 300px;
+  height: 50px;
+  background: rgba(42, 98, 252, 0.834);
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+
+.continue-btn:disabled {
+  background: rgba(42, 98, 252, 0.5);
+ 
+}
+
+.continue-btn img {
+  width: clamp(16px, 4vw, 19px);
+  height: clamp(16px, 4vw, 19px);
+}
+
+/* 📱 Small Devices (Mobile) */
+@media screen and (max-width: 375px) {
+  .hero-area {
+    padding: 15px;
+  }
+
+  .question {
+    font-size: 20px;
+  }
+
+  .dropdown {
+    max-width: 240px;
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .continue-btn {
+    max-width: 250px;
+    height: 45px;
+    font-size: 16px;
+  }
+}
+
+
+
