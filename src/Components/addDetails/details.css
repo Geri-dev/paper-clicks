@@ -66,10 +66,11 @@ input[type="checkbox"] {
 }
 
 .content-checkbox{
-  font-size: 10px;
+  font-size: 8px;
   text-align: justify;
-  max-width: 450px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  max-width: 500px;
+  font-family:'Poppins', sans-serif;
+  
 }
 
 
