@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './heroarea.css';
 import arrowIcon from './right.png';
 
-export const HeroArea = ({ onContinue }) => {
+export const HeroArea = ({ onContinue, selectedTime, setSelectedTime  }) => {
 
-  const [selectedTime, setSelecetedTime] = useState("");
-
-  
-
-  const handlechange = (event) => {
-    setSelecetedTime(event.target.value);
+  // handling time selection from dropdown
+  const handleChange = (event) => {
+    setSelectedTime(event.target.value); 
   };
+  
 
   return (
     <div className='hero-area'>
       <p className='question'>What Is The Best Time To Reach You?</p>
 
-      <select className="dropdown" value={selectedTime} onChange={handlechange}>
+      <select className="dropdown" value={selectedTime} onChange={handleChange}>
 
         <option value="">Choose Your Time</option>
         <option value="8 AM CST">8 AM CST</option>

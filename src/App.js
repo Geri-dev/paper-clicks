@@ -7,20 +7,27 @@ import './App.css';
 
 function App() {
 
-  const [heroComponent, setHeroComponent] = useState("default");
+  const [heroComponent, setHeroComponent] = useState("default"); // hero area component state
 
+  const [selectedTime, setSelectedTime] = useState(""); 
+
+  // this function makes the switch from HeroArea to Details when "continue" is clicked
   const handleContinue = () => {
-    setHeroComponent("another"); //interactivity
+    setHeroComponent("next-hero"); 
   };
+
+  
 
   return (
     <div>
       <Header />
 
+
+      {/* Conditional rendering based on hero area component state */}
       {heroComponent === "default" ? (
-        <HeroArea onContinue={handleContinue} />
+        <HeroArea onContinue={handleContinue} selectedTime={selectedTime} setSelectedTime={setSelectedTime} />
       ) : (
-        <Details />
+        <Details selectedTime={selectedTime}/>
       )}
 
       <div class="footer-links">

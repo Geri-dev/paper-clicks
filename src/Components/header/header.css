@@ -2,10 +2,10 @@
 
 .header-area {
   display: flex;
-  justify-content: space-around; /* Space out items */
+  justify-content: space-around; 
   align-items: center;
   padding: 5px 10px;
-  border-bottom: 1px solid #ccc; /* Bottom border */
+  border-bottom: 1px solid #ccc; 
 }
 
 .logo {
@@ -22,7 +22,7 @@
   background-color: #48a0db;
   transform: rotate(20deg);
   border-radius: 5px;
-  margin: -2px 4px; /* Space around slash */
+  margin: -2px 4px; 
 }
 
 .logo-subtext {
