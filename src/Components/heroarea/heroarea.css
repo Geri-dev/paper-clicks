@@ -72,7 +72,7 @@
   height: clamp(16px, 4vw, 19px);
 }
 
-/* 📱 Small Devices (Mobile) */
+
 @media screen and (max-width: 375px) {
   .hero-area {
     padding: 15px;

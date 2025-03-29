@@ -35,7 +35,7 @@ export const Details = ({ selectedTime }) => {
 
     // displaying the data from step 1 and step 2 on the screen
     alert(JSON.stringify(finalData, null, 2));
-    
+
   };
 
   // checking if all required fields are filled
@@ -90,10 +90,10 @@ export const Details = ({ selectedTime }) => {
           onChange={handleChange2}
         />
         <label className="content-checkbox">
-          By clicking the button above, you acknowledge, consent, and agree to the following:
+          By clicking the button above, you acknowledge, consent and agree to the following:
           a) Our Privacy Policy and consent to receive notices and other communications electronically;
-          b) We take your privacy seriously. You are providing express written consent to share your
-          information with authorized parties.
+          b) We take your privacy seriously. You are providing express written consent for to share your information with up to four (4) of its and for, parties calling on behalf of, or authorized third parties on their behalf to contact you (including through automated means; e.g. autodialing, text and pre-recorded messaging) about legal services or other Mass Tort related offers via telephone, mobile device (including SMS and MMS) and/or email, even if your telephone number is currently listed on any state, federal, local or corporate Do Not Call list;
+          c) Consent to be contacted is not required in order to purchase goods or services from or the that contact you. You may choose to speak with an individual service provider by dialing (888) 888-8888.
         </label>
       </div>
 
